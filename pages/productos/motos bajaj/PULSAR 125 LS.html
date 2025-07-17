@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Detalles de Productos - Moto King</title>
+    <link rel="stylesheet" href="../../../css/style.css">
+    <script src="../../../js/carrito.js" defer></script> 
+</head>
+<body>
+    <!-- barra de apartados -->
+    <header>
+        <h1>Moto King</h1>
+        <nav>
+            <ul> 
+                <li><a href="../../../index.html"><strong>INICIO</strong></a></li>
+                <li><a href="../repuestos.html"><strong>REPUESTOS</strong></a></li> 
+                <li><a href="../motos.html"><strong>MOTOCICLETAS</strong></a></li>
+                <li><a href="../serviciotaller.html"><strong>TALLER</strong></a></li>
+                <li><a href="../comunicacion.html"><strong>CONTACTO</strong></a></li>
+                <li><a href="../loginking.html" class="login-btn"><strong>INICIAR SESIÓN</strong></a></li>
+            </ul>
+        </nav>
+
+    <!-- Carrito de compras -->
+    <div id="carrito-container">
+        <button onclick="toggleCarrito()"><I>🛒 Carrito</I> (<span id="carrito-count">0</span>)</button>
+        <div id="carrito-dropdown" style="display: none;">
+        <ul id="carrito-items"></ul>
+        <p id="total">Total: S/.0</p>
+        <button onclick="vaciarCarrito()">Vaciar Carrito</button>
+        <button onclick="confirmarCompra()">Confirmar Compra</button>
+          
+    <!-- Modelo para recibo -->
+    <div id="recibo-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.5); z-index:9999;">
+      <div style="background:white; margin:5% auto; padding:20px; border-radius:10px; width:90%; max-width:700px; position:relative;">
+          <span onclick="cerrarModal()" style="position:absolute; top:10px; right:20px; cursor:pointer; font-weight:bold; font-size:20px;">&times;</span>
+          <div id="contenido-recibo"></div>
+      </div>
+  </div>
+    </header>  
+<!-- modificar todo el main -->
+    <main>
+        <img src="imagenes motos/bajaj/LS125.webp" alt="PULSAR 125 LS">
+        <div class="contenido">
+            <h2>PULSAR LS125</h2>
+            <li>Te presentamos la Pulsar LS 125 que te invita a disfrutar de su máxima calidad. Tiene 124.5 cc y una potencia única de 11.8HP, su sistema de frenado combinado (CBS), brinda mayor estabilidad en el frenado logrando no sólo que el frenado no sea brusco , sino también que la distancia de frenado sea menor</li>
+            <ul>
+                <h3>Especificaciones detalladas:</h3>
+                <h3>MOTOR: </h3>
+                    <li>
+                        <P>✔ Tipo: 4Monocilindrico</P>
+                        <p>✔ Cilindrada (cc): 124.4  </p> 
+                        <P>✔ Potencia (Hp/rpm): 11.8@8500 (HP@RPM)</P>
+                        <P>✔ Torque máximo (Nm/rpm): 10.75 @ 6500 (Nm @ RPM)</P>
+                        <P>✔ Transmisión: 5 velocidades</P>
+                        <P>✔ Sistema de arranque: Electrico y a Patada</P>
+                    </li> 
+                 <h3>CHASIS Y FRENOS :</h3>       
+                <li><P>✔ Freno delantero: Disco 240 mm</P>
+                    <P>✔ Freno posterior: Tambor 130mm</P>
+                    <P>✔ Suspensión delantera: Telescópica extensión de 130 mm </P>
+                    <P>✔ Suspensión posterior: Doble amortiguación Nitrox</P>
+                    <P>✔ Capacidad de tanque: 10.5 Litros</P>
+                    </li>
+            </ul>
+            <p id="price">Precio: S/ 6,539</p>
+            <button onclick="agregarAlCarrito('PULSAR LS125', 6539)">Agregar al Carrito</button>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>MOTO KING</h3>
+                <p>Tu moto, tu estilo, tu camino</p>
+            </div>
+            <div class="footer-section">
+                <h3>CONTACTO</h3>
+                <p>📍 Ica, Perú</p>
+                <p>📞 934-746-375</p>
+                <p>✉️ info-motoking@hotmail.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>SIGUENOS</h3>
+                <div class="social-links">
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <marquee>&copy; 2025 MOTO KING. Todos los derechos reservados.</marquee>
+    </footer>
+</body>
+</html>

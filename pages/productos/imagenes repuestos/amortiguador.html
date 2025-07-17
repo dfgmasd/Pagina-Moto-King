@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Detalles de Productos - Moto King</title>
+    <link rel="stylesheet" href="../../../css/style.css">
+    <script src="../../../js/carrito.js" defer></script> 
+</head>
+<body>
+    <!-- barra de apartados -->
+    <header>
+        <h1>Moto King</h1>
+        <nav>
+            <ul> 
+                <li><a href="../../../index.html"><strong>INICIO</strong></a></li>
+                <li><a href="../repuestos.html"><strong>REPUESTOS</strong></a></li> 
+                <li><a href="../motos.html"><strong>MOTOCICLETAS</strong></a></li>
+                <li><a href="../serviciotaller.html"><strong>TALLER</strong></a></li>
+                <li><a href="../comunicacion.html"><strong>CONTACTO</strong></a></li>
+                <li><a href="../loginking.html" class="login-btn"><strong>INICIAR SESIÓN</strong></a></li>
+            </ul>
+        </nav>
+
+    <!-- Carrito de compras -->
+    <div id="carrito-container">
+        <button onclick="toggleCarrito()"><I>🛒 Carrito</I> (<span id="carrito-count">0</span>)</button>
+        <div id="carrito-dropdown" style="display: none;">
+        <ul id="carrito-items"></ul>
+        <p id="total">Total: S/.0</p>
+        <button onclick="vaciarCarrito()">Vaciar Carrito</button>
+        <button onclick="confirmarCompra()">Confirmar Compra</button>
+          
+    <!-- Modelo para recibo -->
+    <div id="recibo-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.5); z-index:9999;">
+      <div style="background:white; margin:5% auto; padding:20px; border-radius:10px; width:90%; max-width:700px; position:relative;">
+          <span onclick="cerrarModal()" style="position:absolute; top:10px; right:20px; cursor:pointer; font-weight:bold; font-size:20px;">&times;</span>
+          <div id="contenido-recibo"></div>
+      </div>
+  </div>
+    </header>  
+<!-- modificar todo el main -->
+    <main>
+        <img src="amortiguador.jpg" alt="Amortiguador">
+        <div class="contenido">
+            <h2>Amortiguador doble resorte Volda</h2>
+            <li>Juego de Amortiguador posterior para moto con doble resorte marca Volda, fabricados en acero.</li>
+            <ul>
+                <h3>DESCRIPCION: </h3>
+                    <li>
+                        <P>Marca: Volda</P>
+                        <p>Marca: Volda
+                            Modelo: Doble resorte  </p> 
+                        <P>Material: Acero</P>
+                    </li> 
+            </ul>
+            <p id="price">Precio: S/. 80,00</p>
+            <button onclick="agregarAlCarrito('Amortiguador Doble', 80.00)">Agregar al Carrito</button>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>MOTO KING</h3>
+                <p>Tu moto, tu estilo, tu camino</p>
+            </div>
+            <div class="footer-section">
+                <h3>CONTACTO</h3>
+                <p>📍 Ica, Perú</p>
+                <p>📞 934-746-375</p>
+                <p>✉️ info-motoking@hotmail.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>SIGUENOS</h3>
+                <div class="social-links">
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <marquee>&copy; 2025 MOTO KING. Todos los derechos reservados.</marquee>
+    </footer>
+</body>
+</html>

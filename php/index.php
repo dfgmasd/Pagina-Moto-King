@@ -1,26 +1,38 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/estilos.css"> 
+    <link rel="stylesheet" href="../CSS/style.css">
+
+</head>
+<body>
+<?php
+include("sesion.php");
+?>
+
+<!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
     <title>MOTO KING - Venta Repuestos y motocicletas</title>
     <link rel="stylesheet" href="CSS/style.css">
-    <script src="JS/carrito.js"></script>
+    <script src="../JS/carrito.js"></script>
     <script src="confirmar_compra.php"></script>
 
 </head>
 <body>
     <!-- barra de apartados -->
-    <header>
-        <h1><i><strong>MOTO KING</strong></i></h1>
+    <header>    
         <nav>
             <ul> 
                 <!-- enlaces entre apartados -->
-                <li><a href="index.html"><I><strong>INICIO</strong></I></a></li>
-                <li><a href="pages/productos/repuestos.html"><I><strong>REPUESTOS</strong></I></a></li> 
-                <li><a href="pages/productos/motos.html"><I><strong>MOTOCICLETAS</strong></I></a></li>
-                <li><a href="pages/productos/serviciotaller.html"><I><strong>TALLER</strong></I></a></li>
-                <li><a href="pages/productos/comunicacion.html"><I><strong>CONTACTO</strong></I></a></li>
-                <li><a href="pages/productos/loginking.html" class="login-btn"><i><strong>INICIAR SESION</strong></i></a></li>
+                <li><a href="index.php"><I><strong>INICIO</strong></I></a></li>
+                <li><a href="../clienteV/repuestos.php"><I><strong>REPUESTOS</strong></I></a></li> 
+                <li><a href="../clienteV/motos.php"><I><strong>MOTOCICLETAS</strong></I></a></li>
+                <li><a href="../clienteV/serviciotaller.php"><I><strong>TALLER</strong></I></a></li>
+                <li><a href="../clienteV/comunicacion.php"><I><strong>CONTACTO</strong></I></a></li>
             </ul>
         </nav>
 
@@ -42,13 +54,7 @@
   </div>
   
     </header>    
-    <!-- panel de inicio -->
-    <section class="inicio">
-        <div class="cont-inicio">
-            <h1><i>MOTOCICLETAS DEL TIEMPO ACTUAL</i></h1>
-            <p><i><strong> Las Mejores Motocicletas, Repuestos y Servicios de Taller al Mejor Precio</strong></i></p>
-        </div>
-    </section>
+    
     <!-- seccion de promociones -->
     <h2>PROMOCIONES DEL MES</h2>
 <div class="carrusel-container"> <!--  boton mover izquierda carrusel-->
@@ -158,7 +164,7 @@
   <!--  boton mover dereccha carrusel-->
  <button class="carrusel-btn derecha" onclick="moverCarrusel(1)">&#10095;</button>
 </div>
-<script src="JS/CARRUSEL.js"></script>
+<script src="../JS/CARRUSEL.js"></script>
 
 <h2>Consejos de Mantenimiento para Motos</h2>
 <div class="video-tip-section">
@@ -224,22 +230,6 @@
     </div>
   </div>
 
-</div>
-<!-- boton: ENVIAR MENSAJE Y EMERGENCIA -->
-<div class="enviar-mensaje">
-  <button>
-    <a href="https://wa.me/51934746375" class="whatsapp">
-      <img src="imagenes promociones/logos--whatsapp-icon.svg" alt="WhatsApp" style="width: 30px; height: 30px;">
-      <strong>Enviar mensaje</strong>
-    </a>
-  </button>
-
-  <button>
-    <a href="tel:51934746375" class="emergencia">
-      <img src="imagenes promociones/emergencia.png" alt="Emergencia" style="width: 35px; height: 35px;">
-      <strong>Llamada de emergencia</strong>
-    </a>
-  </button>
 </div>
 
 <!-- diseño del footer -->

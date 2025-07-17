@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Detalles de Productos - Moto King</title>
+    <link rel="stylesheet" href="../../../css/style.css">
+    <script src="../../../js/carrito.js" defer></script> 
+</head>
+<body>
+    <!-- barra de apartados -->
+    <header>
+        <h1>Moto King</h1>
+        <nav>
+            <ul> 
+                <li><a href="../../../index.html"><strong>INICIO</strong></a></li>
+                <li><a href="../repuestos.html"><strong>REPUESTOS</strong></a></li> 
+                <li><a href="../motos.html"><strong>MOTOCICLETAS</strong></a></li>
+                <li><a href="../serviciotaller.html"><strong>TALLER</strong></a></li>
+                <li><a href="../comunicacion.html"><strong>CONTACTO</strong></a></li>
+                <li><a href="../loginking.html" class="login-btn"><strong>INICIAR SESIÓN</strong></a></li>
+            </ul>
+        </nav>
+
+    <!-- Carrito de compras -->
+    <div id="carrito-container">
+        <button onclick="toggleCarrito()"><I>🛒 Carrito</I> (<span id="carrito-count">0</span>)</button>
+        <div id="carrito-dropdown" style="display: none;">
+        <ul id="carrito-items"></ul>
+        <p id="total">Total: S/.0</p>
+        <button onclick="vaciarCarrito()">Vaciar Carrito</button>
+        <button onclick="confirmarCompra()">Confirmar Compra</button>
+          
+    <!-- Modelo para recibo -->
+    <div id="recibo-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.5); z-index:9999;">
+      <div style="background:white; margin:5% auto; padding:20px; border-radius:10px; width:90%; max-width:700px; position:relative;">
+          <span onclick="cerrarModal()" style="position:absolute; top:10px; right:20px; cursor:pointer; font-weight:bold; font-size:20px;">&times;</span>
+          <div id="contenido-recibo"></div>
+      </div>
+  </div>
+    </header>  
+<!-- modificar todo el main -->
+    <main>
+        <img src="casco.jpg" alt="Casco">
+        <div class="contenido">
+            <h2>Casco LS2 Integral modelo FF320 Stream Evo Negro/Rojo</h2>
+            <li>Candado de disco marca KMAZTER compacto, ligero y portátil con diseño impermeable, a prueba de lluvia y fácil de aplicar a los discos de freno. Cuenta con una alarma incorporada.</li>
+            <ul>Casco LS2 integral modelo FF320 Stream Evo color negro/rojo, construido en material Policarbonato ABS para uso con motocicleta. Disponible con doble visor integral. Seguridad y alto nivel de confort ideal para uso diario, hebilla micrométrica de liberación rápida e interior acolchado, cómodo extraíble y lavable. Cuenta con certificación europea ECER
+                <h3>DESCRIPCION: </h3>
+                    <li>
+                        <P>Marca: LS2</P>
+                        <p>Material: ABS Policarbonato </p> 
+                        <P>Certificación: ECER</P>
+                        <P>Color: negro/rojo  (se muestra en la imagen)</P>
+                    </li> 
+            </ul>
+            <p id="price">Precio: S/. 350,00</p>
+            <button onclick="agregarAlCarrito('Casco Ls2', 350.00)">Agregar al Carrito</button>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>MOTO KING</h3>
+                <p>Tu moto, tu estilo, tu camino</p>
+            </div>
+            <div class="footer-section">
+                <h3>CONTACTO</h3>
+                <p>📍 Ica, Perú</p>
+                <p>📞 934-746-375</p>
+                <p>✉️ info-motoking@hotmail.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>SIGUENOS</h3>
+                <div class="social-links">
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <marquee>&copy; 2025 MOTO KING. Todos los derechos reservados.</marquee>
+    </footer>
+</body>
+</html>
